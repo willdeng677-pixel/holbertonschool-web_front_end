@@ -1,5 +1,8 @@
-
 @import url("normalize.css");
+
+* {
+    box-sizing: border-box;
+}
 
 :root {
     --color-primary: #d73953;
@@ -28,10 +31,6 @@
     --section-tagline-transform: uppercase;
     --section-title-margin: 0;
     --section-title-color: var(--color-black);
-}
-
-* {
-    box-sizing: border-box;
 }
 
 html {
