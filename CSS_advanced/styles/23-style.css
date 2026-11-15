@@ -212,22 +212,21 @@ ul.row {
     text-align: right;
 }
 
-/* Targeting the footer address */
+.footer {
+    padding: var(--footer-padding);
+}
+
+/* Footer address */
 .footer-address {
     color: var(--text-color);
 }
 
-/* Styling social links */
+/* Social link */
 .social-link {
     display: block;
 }
 
-/* Styling SVG inside social links */
+/* Social link SVG */
 .social-link svg {
     fill: var(--text-color);
-}
-
-
-.footer {
-    padding: var(--footer-padding);
 }
