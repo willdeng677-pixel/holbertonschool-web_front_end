@@ -31,6 +31,7 @@
     --section-title-margin: 0;
     --section-title-color: var(--color-black);
 }
+
 /* Universal box sizing */
 * {
     box-sizing: border-box;
