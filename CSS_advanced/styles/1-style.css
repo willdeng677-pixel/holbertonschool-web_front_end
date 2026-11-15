@@ -1,4 +1,6 @@
 /* properties color variable */
+@import url("normalize.css");
+
 :root {
     --color-primary: #d73953;
     --color-black: #09090909;
