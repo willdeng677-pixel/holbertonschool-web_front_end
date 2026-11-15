@@ -49,6 +49,18 @@ a {
     color: var(--text-color);
     text-decoration: none;
 }
+a:link {
+    text-decoration: none;
+}
+a:visited {
+    font-style: italic;
+}
+a:hover {
+    text-decoration: underline;
+}
+a:active {
+    background-color: var(--color-light-grey);
+}
 
 /* Visually hidden elements */
 .visually-hodden {
