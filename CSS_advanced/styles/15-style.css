@@ -30,14 +30,11 @@
     --section-title-color: var(--color-black);
 }
 
-*,
-*:before,
-*:after {
-    box-sizing: inherit;
+* {
+    box-sizing: border-box;
 }
 
 html {
-    box-sizing: border-box;
     font-size: 62.5%;
     scroll-behavior: smooth;
 }
