@@ -218,18 +218,21 @@ ul.row {
     text-align: right;
 }
 
-
+/* Targeting the footer address */
 .footer-address {
     color: var(--text-color);
 }
 
+/* Styling social links */
 .social-link {
     display: block;
 }
 
+/* Styling SVG inside social links */
 .social-link svg {
     fill: var(--text-color);
 }
+
 
 /* Footer */
 .footer {
