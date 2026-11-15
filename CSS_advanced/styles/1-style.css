@@ -43,6 +43,14 @@
     --section-footer-padding: 3rem 0 0;
     --section-footer-align: center;
     --footer-padding: 5rem 0 1rem;
+
+    --nav-item-font-family: var(--font-family-title);
+    --nav-item-font-weight: var(--font-weight-bold);
+    --nav-item-font-size: var(--font-size-medium);
+    --nav-item-letter-spacing: 0.04rem;
+    --nav-item-display: inline-block;
+    --nav-item-margin: 0 0 3rem 0;
+    --nav-item-link-hover: var(--color-primary);
 }
 
 html {
@@ -125,6 +133,40 @@ a:active {
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-family-title);
     font-weight: var(--font-weght-bold);
+}
+
+/* Navbar menu */
+.navbar-menu {
+    float: right;
+}
+
+/* Navigation */
+.nav {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+
+/* Navigation items */
+.nav .nav-item {
+    font-family: var(--nav-item-font-family);
+    font-weight: var(--nav-item-font-weight);
+    font-size: var(--nav-item-font-size);
+    letter-spacing: var(--nav-item-letter-spacing);
+    display: var(--nav-item-display);
+    margin: var(--nav-item-margin);
+}
+
+/* Navigation links */
+.nav .nav-link {
+    display: block;
+    padding: 0.5rem 1rem;
+}
+
+/* Navigation link hover */
+.nav .nav-link:hover {
+    color: var(--nav-item-link-hover);
 }
 
 /* Footer */
