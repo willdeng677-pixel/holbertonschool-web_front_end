@@ -1,6 +1,12 @@
 /* properties color variable */
-
 @import url("normalize.css");
+
+/* Universal box sizing */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
 
 :root {
     --color-primary: #d73953;
@@ -30,11 +36,6 @@
 
     --section-title-margin: 0;
     --section-title-color: var(--color-black);
-}
-
-/* Universal box sizing */
-* {
-    box-sizing: border-box;
 }
 
 html {
@@ -95,6 +96,12 @@ a:active {
     font-family: var(--font-family-title);
     text-transform: var(--section-tagline-transform);
     font-weight: var(--font-weight-bold);
+}
+
+.container {
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* All levels h1-h6 */
