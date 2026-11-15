@@ -41,6 +41,7 @@ body {
 /* All anchor elements */
 a {
     color: var(--text-color);
+    text-decoration: none;
 }
 
 /* Visually hidden elements */
