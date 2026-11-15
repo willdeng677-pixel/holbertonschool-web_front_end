@@ -23,6 +23,7 @@
     --line-height-big: 1.8;
 
     --section-header-align: center;
+    --section-tagline-transform: uppercase;
 } 
 
 html {
@@ -56,12 +57,18 @@ a {
     color: var(--color-primary);
 }
 
-/* Section header */
+/* Section tagline */
 .section-header {
     text-align: var(--section-header-align);
 }
 .section-tagline {
     color: var(--color-primary);
+}
+.section-tagline {
+    color: var(--color-primary);
+    font-family: var(--font-family-title);
+    text-transform: var(--section-tagline-transform);
+    font-weight: var(--font-weight-bold);
 }
 
 /* All levels h1-h6 */
