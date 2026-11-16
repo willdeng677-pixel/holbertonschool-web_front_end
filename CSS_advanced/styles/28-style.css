@@ -82,6 +82,20 @@ body {
     line-height: var(--line-height-base);
 }
 
+.header {
+  padding: var(--header-padding);
+}
+
+.header-logo {
+  position: var(--header-logo-position);
+}
+
+.header-logo a {
+  display: var(--header-logo-link-display);
+  position: var(--header-logo-link-position);
+  top: var(--header-logo-link-top);
+  left: var(--header-logo-link-left);
+}
 
 a:link {
     color: var(--text-color);
@@ -98,22 +112,6 @@ a:hover {
 
 a:active {
     background-color: var(--color-light-grey);
-}
-
-/* Header section */
-header {
-    padding: var(--header-padding);
-}
-
-.header-logo {
-    position: var(--header-logo-position);
-}
-
-.header-logo a {
-    display: var(--header-logo-link-display);
-    position: var(--header-logo-link-position);
-    top: var(--header-logo-link-top);
-    left: var(--header-logo-link-left);
 }
 
 .button {
@@ -329,6 +327,6 @@ ul.row {
 }
 
 /* Social link SVG */
-.social-link svg {
-    fill: currentColor;
+.social-link >  svg {
+    fill: var(--text-color);
 }
