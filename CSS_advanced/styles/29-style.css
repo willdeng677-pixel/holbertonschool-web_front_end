@@ -48,7 +48,6 @@
     --nav-item-display: inline-block;
     --nav-item-margin: 0 0 3rem 0;
     --nav-item-link-hover: var(--color-primary);
-     --nav-item-link-hover: var(--color-white);
 
     --section-tagline-margin: 0;
 
@@ -266,25 +265,31 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--nav-item-link-hover);
 }
 
+/* Navigation */
 .nav-item-link-hover {
-  color: var(--color-white);
+    color: var(--color-white);
 }
 
 
-nav .nav-link::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-color: var(--color-white);
-  width: 0;
-  height: 0.2rem; /* 20% of the root font size */
+
+/* Nav link before pseudo-element */
+.nav .nav-link::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--color-white);
+    width: 0;
+    height: 20%;
 }
 
-nav .nav-item:hover .nav-link::before {
-  background-color: var(--color-primary);
-  width: 100%;
+/* Nav link before pseudo-element on hover */
+.nav .nav-item:hover .nav-link::before {
+    background-color: var(--color-primary);
+    width: 100%;
 }
+
+
 
 /* Row */
 ul.row {
