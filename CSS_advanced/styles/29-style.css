@@ -266,6 +266,11 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--nav-item-link-hover);
 }
 
+.nav-item-link-hover {
+  color: var(--color-white);
+}
+
+
 nav .nav-link::before {
   content: "";
   position: absolute;
