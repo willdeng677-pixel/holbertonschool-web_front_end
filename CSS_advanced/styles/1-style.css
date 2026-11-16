@@ -95,6 +95,28 @@ a:active {
     color: var(--color-primary);
 }
 
+
+
+/* Card services title */
+.card-services .card-title {
+    margin: 0;
+}
+
+/* Card services links */
+.card-services a {
+    display: block;
+    padding: 2rem;
+    background-color: var(--color-light-grey);
+}
+
+/* Card services link hover */
+.card-services a:hover {
+    color: var(--color-white);
+    background-color: var(--color-primary);
+    text-decoration: none;
+}
+
+
 /* Section tagline */
 .section {
     padding: var(--section-padding);
