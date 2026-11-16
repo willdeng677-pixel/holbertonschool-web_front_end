@@ -48,7 +48,7 @@
     --nav-item-display: inline-block;
     --nav-item-margin: 0 0 3rem 0;
     --nav-item-link-hover: var(--color-primary);
-    --nav-item-link-hover: var(--color-white);
+     --nav-item-link-hover: var(--color-white);
 
     --section-tagline-margin: 0;
 
@@ -83,6 +83,20 @@ body {
     line-height: var(--line-height-base);
 }
 
+.header {
+  padding: var(--header-padding);
+}
+
+.header-logo {
+  position: var(--header-logo-position);
+}
+
+.header-logo a {
+  display: var(--header-logo-link-display);
+  position: var(--header-logo-link-position);
+  top: var(--header-logo-link-top);
+  left: var(--header-logo-link-left);
+}
 
 a:link {
     color: var(--text-color);
@@ -99,22 +113,6 @@ a:hover {
 
 a:active {
     background-color: var(--color-light-grey);
-}
-
-/* Header section */
-header {
-    padding: var(--header-padding);
-}
-
-.header-logo {
-    position: var(--header-logo-position);
-}
-
-.header-logo a {
-    display: var(--header-logo-link-display);
-    position: var(--header-logo-link-position);
-    top: var(--header-logo-link-top);
-    left: var(--header-logo-link-left);
 }
 
 .button {
@@ -179,56 +177,67 @@ header {
 }
 
 
+
+/* Target .card-outer within .card-work */
 .card-work .card-outer {
-    position: relative;
-    overflow: hidden;
+  position: relative;
+  overflow: hidden;
 }
 
+/* Target the image inside .card-image inside .card-work */
 .card-work .card-image img {
-    height: 30rem;
-    width: 100%;
-    object-fit: cover;
-    object-position: bottom;
+  height: 30rem;
+  width: 100%;
+  object-fit: cover;
+  vertical-align: bottom;
 }
 
+/* Target .card-inner inside .card-work */
 .card-work .card-inner {
-    position: absolute;
-    top: -0.1rem;
-    left: -0.1rem;
-    right: -0.1rem;
-    z-index: 1;
+  position: absolute;
+  top: -0.1rem;
+  left: -0.1rem;
+  right: -0.1rem;
+  z-index: 1;
 }
 
+/* Target .card-inner when .card-work is hovered */
 .card-work:hover .card-inner {
-    background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
+/* Target .card-title inside .card-work */
 .card-work .card-title {
-    text-align: center;
-    margin: 0;
-    opacity: 0;
-    height: 100%;
-    position: relative;
+  text-align: center;
+  margin: 0;
+  opacity: 0;
+  height: 100%;
+  position: relative;
 }
 
+/* Target the link inside .card-title and .card-work */
 .card-work .card-title a {
-    display: block;
-    text-decoration: none;
-    padding-top: 45%;
+  display: block;
+  text-decoration: none;
+  padding-top: 45%;
 }
 
+/* Create the ::after pseudo-elements of the link (inside .card-title and .card-work) */
 .card-work .card-title a::after {
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  content: "";
 }
 
+/* Target .card-title when .card-work is hovered */
 .card-work:hover .card-title {
-    opacity: 1;
+  opacity: 1;
 }
+
+
 
 .section {
     padding: var(--section-padding);
@@ -319,19 +328,22 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--nav-item-link-hover);
 }
 
-nav .nav-link::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: var(--color-white);
-    width: 0;
-    height: 20%;
+
+/* Target the ::before pseudo-element of .nav-link inside .nav */
+.nav .nav-link::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--color-white);
+  width: 0;
+  height: 0.2rem;
 }
 
-nav .nav-item:hover .nav-link::before {
-    background-color: var(--color-primary);
-    width: 100%;
+/* Target the ::before pseudo-element */
+.nav .nav-item:hover .nav-link::before {
+  background-color: var(--color-primary);
+  width: 100%;
 }
 
 
@@ -397,6 +409,6 @@ ul.row {
 }
 
 /* Social link SVG */
-.social-link svg {
-    fill: currentColor;
+.social-link >  svg {
+    fill: var(--text-color);
 }
