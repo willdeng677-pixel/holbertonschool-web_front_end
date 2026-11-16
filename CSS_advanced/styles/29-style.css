@@ -49,6 +49,8 @@
     --nav-item-margin: 0 0 3rem 0;
     --nav-item-link-hover: var(--color-primary);
 
+    --nav-item-link-hover: var(--color-white);
+
     --section-tagline-margin: 0;
 
     --button-display: inline-block;
@@ -264,12 +266,6 @@ h1, h2, h3, h4, h5, h6 {
 .nav .nav-link:hover {
     color: var(--nav-item-link-hover);
 }
-
-/* Navigation */
-.nav-item-link-hover {
-    color: var(--color-white);
-}
-
 
 
 /* Nav link before pseudo-element */
